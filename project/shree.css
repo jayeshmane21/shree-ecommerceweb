@@ -176,6 +176,56 @@ body {
     padding: 5px 10px;
     cursor: pointer;
 }
+.signin-container {
+    width: auto;
+    margin:auto;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.signin-container h2 {
+    margin-bottom: 10px;
+}
+
+.signin-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin-container button {
+    width: 100%;
+    padding: 10px;
+    background: cover;
+    color:brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-container button:hover {
+    background:whitesmoke ;
+}
+
+/* Style Sign In button in Navbar */
+.sign-in-btn {
+    background: content;
+    padding: 8px 15px;
+    color:brown;
+    border-radius: 5px;
+}
+
+.sign-in-btn:hover {
+    background: #e65c00;
+}.nav-return, .nav-cart {
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
 .nav-signin span, .nav-return span {
     font-size: 12px;
@@ -240,7 +290,7 @@ body {
 
 /* Hero Section */
 .hero {
-    width: 500px;
+    width: auto;
     max-height: 500px;
     overflow: hidden;
     position: relative;
@@ -348,19 +398,38 @@ body {
 h1 {
  text-align:center;
 }
+/* Container to align products nicely */
 .product-container {
-    display:grid;
-    width:1000px;
-    height:auto;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap:20px; /* Space between items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
 
-.product-container img {
-    width: 1000px; /* Adjust width to fit the grid */
-    max-width:1000px; /* Optional: Limit max size */
-    height:500px;
-    padding :10px
+/* Style each product card */
+.product {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Ensure product images look good on desktop */
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+.product-container {
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap:20px; /* Space between items */
 }
 
 .product {
@@ -403,6 +472,7 @@ footer {
     color:whitesmoke ;
     text-align:left;
     padding: 20px;
+
 }
 
 /* Footer Panel 1 */
@@ -411,6 +481,7 @@ footer {
     padding: 10px;
     cursor: pointer;
     font-weight: bold;
+    
 }footer {
     background-color:brown;
     color:whitesmoke;

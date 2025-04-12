@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - E-Commerce</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+            <form action="/signup" method="POST">
+                <div class="textbox">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+                </div>
+                <div class="terms-conditions">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+               <button onclick="location.href='index.html'" type="submit" class="btn">Sign Up</button>
+                <div class="signin-link">
+                    <p>Already have an account? <a class="log" href="login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
